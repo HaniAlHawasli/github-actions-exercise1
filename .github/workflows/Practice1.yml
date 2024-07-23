@@ -2,7 +2,7 @@ name: Lint Test Deploy On Push
 on: push
 jobs:
   Lint:
-    runs-on: ubuntu-latset
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
