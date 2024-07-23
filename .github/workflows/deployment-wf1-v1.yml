@@ -1,7 +1,7 @@
 name: Lint Test Deploy On Push
 on: push
 jobs:
-  Lint:
+  Lint-test-build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
