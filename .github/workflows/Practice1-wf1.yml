@@ -14,19 +14,15 @@ jobs:
         run: npm ci
       - name: Lint Code
         run: |
-          eslint --ext .jsx --fix src
+          npm run lint
           echo "Linting code..."
   Test:
     runs-on: ubuntu-latest
     steps:
       - name: Testing code
-        run: |
-          vitest run
-          echo "Testing code..."
+        run: npm run test
   Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: build code
-        run: |
-          vite build
-          echo "Building code..."
+        run: npm run build
