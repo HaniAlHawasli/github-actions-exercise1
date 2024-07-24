@@ -1,7 +1,5 @@
 name: Output Event Details on Issues
-on:
-  issues:
-    types: [opened, edited, milestoned]
+on: issues
 jobs:
   info:
     runs-on: ubuntu-latest
